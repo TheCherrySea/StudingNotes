@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+	<!-- 实体类包的别名 -->
+	<typeAliases>
+		<package name="com.ynnz.pojo"/>
+	</typeAliases>
+    <!--每一个mapper.xml都需要在mybatis的核心配置文件注册-->
+    <mappers>
+        <mapper resource="com/ynnz/mapper/AccountCustomMapper.xml"/>
+         <mapper resource="com/ynnz/mapper/gen/AccountMapper.xml"/>
+          <mapper resource="com/ynnz/mapper/gen/TypeMapper.xml"/>
+           <mapper resource="com/ynnz/mapper/gen/UserMapper.xml"/>
+    </mappers>
+</configuration>
